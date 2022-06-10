@@ -6,6 +6,10 @@ contract AdvancedStorage {
 
     uint256[] public data;
 
+    constructor() public {
+        addContent(1);
+    }
+
     //function to add content to list
     function addContent(uint256 _data) public {
         data.push(_data);
